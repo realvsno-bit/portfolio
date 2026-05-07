@@ -15,12 +15,6 @@ export default function Portfolio() {
   link: "https://github.com/realvsno-bit/resume-maker",
   image: resumeImg,
   },
-
-  {
-    title: "Task Manager",
-    desc: "A clean productivity app with task tracking and local storage.",
-    link: "https://github.com/realvsno-bit/task-manager",
-  },
 ]
 
   const skills = [
