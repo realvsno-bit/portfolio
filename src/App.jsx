@@ -3,7 +3,7 @@ export default function Portfolio() {
   const projects = [
   {
     title: "Modern Calculator",
-    desc: "A stylish calculator built with React and Tailwind CSS.",
+    desc: "A stylish calculator built with React and Tailwind CSS.(USING AI)",
     link: "https://github.com/realvsno-bit/calculator",
   },
   {
