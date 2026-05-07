@@ -105,7 +105,7 @@ export default function Portfolio() {
       <section id="projects" className="px-6 md:px-20 py-20">
         <h2 className="text-4xl font-bold text-center mb-14">Projects</h2>
 
-        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto place-items-center">
+        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {projects.map((project, index) => (
             <div
               key={index}
