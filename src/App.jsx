@@ -1,3 +1,4 @@
+import resumeImg from './assets/resume-builder.png'
 import calculatorImg from './assets/calculator.png'
 import profile from './assets/profile.png'
 export default function Portfolio() {
@@ -9,10 +10,12 @@ export default function Portfolio() {
     image: calculatorImg,
   },
   {
-    title: "Weather App",
-    desc: "A responsive weather application using APIs and JavaScript.",
-    link: "https://github.com/realvsno-bit/weather-app",
+  title: "Resume Maker",
+  desc: "A modern resume builder with live preview and PDF export.",
+  link: "https://github.com/realvsno-bit/resume-maker",
+  image: resumeImg,
   },
+
   {
     title: "Task Manager",
     desc: "A clean productivity app with task tracking and local storage.",
