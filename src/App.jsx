@@ -1,19 +1,22 @@
 import profile from './assets/profile.png'
 export default function Portfolio() {
   const projects = [
-    {
-      title: "Weather App",
-      desc: "A responsive weather application using APIs and JavaScript.",
-    },
-    {
-      title: "Task Manager",
-      desc: "A clean productivity app with task tracking and local storage.",
-    },
-    {
-      title: "Modern Landing Page",
-      desc: "A responsive business landing page with smooth UI design.",
-    },
-  ];
+  {
+    title: "Modern Calculator",
+    desc: "A stylish calculator built with React and Tailwind CSS.",
+    link: "https://github.com/realvsno-bit/calculator-app",
+  },
+  {
+    title: "Weather App",
+    desc: "A responsive weather application using APIs and JavaScript.",
+    link: "https://github.com/realvsno-bit/weather-app",
+  },
+  {
+    title: "Task Manager",
+    desc: "A clean productivity app with task tracking and local storage.",
+    link: "https://github.com/realvsno-bit/task-manager",
+  },
+]
 
   const skills = [
     "HTML",
@@ -56,9 +59,12 @@ export default function Portfolio() {
         </p>
 
         <div className="flex gap-4 mt-10 flex-wrap justify-center">
-          <button className="px-6 py-3 rounded-2xl bg-white text-black font-semibold hover:scale-105 transition duration-300 shadow-xl">
-            View Projects
-          </button>
+         <a
+          href="#projects"
+          className="px-6 py-3 rounded-2xl bg-white text-black font-semibold hover:scale-105 transition duration-300 shadow-xl"
+        >
+          View Projects
+        </a>
 
           <button className="px-6 py-3 rounded-2xl border border-white/20 hover:bg-white/10 transition duration-300">
             Contact Me
@@ -72,9 +78,10 @@ export default function Portfolio() {
           <h2 className="text-4xl font-bold mb-6">About Me</h2>
 
           <p className="text-gray-300 leading-8 text-lg">
-            I am a passionate web developer focused on creating beautiful and
-            interactive websites. I enjoy learning modern technologies and
-            building projects that improve my development skills.
+            Im a passionate Full Stack Web Development learner 💻🚀 who enjoys building modern, responsive, and interactive websites.
+            Im constantly improving my skills in frontend and backend technologies, learning how to create complete web applications from design to deployment. 
+            I enjoy exploring new tools, solving coding problems, and turning ideas into real projects. 
+            My goal is to grow into a skilled developer capable of building fast, scalable, and user-friendly web experiences.
           </p>
         </div>
       </section>
@@ -111,9 +118,14 @@ export default function Portfolio() {
 
               <p className="text-gray-400 leading-7">{project.desc}</p>
 
-              <button className="mt-6 px-5 py-2 rounded-xl bg-white text-black font-medium hover:scale-105 transition duration-300">
+              <a
+                href={project.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block mt-6 px-5 py-2 rounded-xl bg-white text-black font-medium hover:scale-105 transition duration-300"
+              >
                 View Project
-              </button>
+              </a>
             </div>
           ))}
         </div>
@@ -130,7 +142,7 @@ export default function Portfolio() {
 
           <div className="flex flex-col md:flex-row justify-center gap-6 text-lg">
             <a
-              href="mailto:yourmail@example.com"
+              href="mailto:realvsno@example.com"
               className="px-6 py-4 rounded-2xl bg-white text-black font-semibold hover:scale-105 transition duration-300"
             >
               Email Me
