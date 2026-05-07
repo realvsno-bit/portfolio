@@ -1,3 +1,4 @@
+import calculatorImg from './assets/calculator.png'
 import profile from './assets/profile.png'
 export default function Portfolio() {
   const projects = [
@@ -5,6 +6,7 @@ export default function Portfolio() {
     title: "Modern Calculator",
     desc: "A stylish calculator built with React and Tailwind CSS.(USING AI)",
     link: "https://github.com/realvsno-bit/calculator",
+    image: calculatorImg,
   },
   {
     title: "Weather App",
@@ -112,7 +114,11 @@ export default function Portfolio() {
               key={index}
               className="bg-white/5 border border-white/10 rounded-3xl p-8 hover:-translate-y-2 hover:bg-white/10 transition duration-300 shadow-2xl"
             >
-              <div className="h-40 rounded-2xl bg-gradient-to-br from-gray-800 to-gray-900 mb-6" />
+              <img
+                src={project.image}
+                alt={project.title}
+                className="h-40 w-full object-cover rounded-2xl mb-6 border-2 border-white/10"
+              />
 
               <h3 className="text-2xl font-bold mb-4">{project.title}</h3>
 
