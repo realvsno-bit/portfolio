@@ -4,7 +4,7 @@ export default function Portfolio() {
   {
     title: "Modern Calculator",
     desc: "A stylish calculator built with React and Tailwind CSS.",
-    link: "https://github.com/realvsno-bit/calculator-app",
+    link: "https://github.com/realvsno-bit/calculator",
   },
   {
     title: "Weather App",
